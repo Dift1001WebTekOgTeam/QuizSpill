@@ -1,3 +1,29 @@
+// Amalies kode følger nedenfor
+// Skjuler hjemskjermen ved start
+document.getElementById('home-screen').style.display = 'none';
+
+// Hent elementene
+const startButton = document.getElementById('start-button');
+const continueButton = document.getElementById('continue-button');
+const landingPage = document.getElementById('landing-page');
+const rulesPage = document.getElementById('rules-page');
+
+// Bytt fra landing-page til regler-siden når "START"-knappen trykkes
+startButton.addEventListener('click', function() {
+    landingPage.style.display = 'none';
+    rulesPage.style.display = 'flex'; // Viser regler-siden
+});
+
+// Bytt fra regler-siden til kategorisiden når "FORTSETT"-knappen trykkes
+continueButton.addEventListener('click', function() {
+    rulesPage.style.display = 'none';
+    document.getElementById('home-screen').style.display = 'block'; // Viser kategorisiden
+});
+// Amalies kode ligger ovenfor denne kommentaren
+
+
+
+
 // Henter elementer fra DOM
 const lifeCountElement = document.getElementById('life-count');
 const quizLifeCountElement = document.getElementById('quiz-life-count'); 
