@@ -1,3 +1,156 @@
+/* Amalies kode følger nedenfor */
+/* Landing Page */
+#landing-page {
+    position: absolute; /* Plasserer elementet absolutt i forhold til dets nærmeste posisjonerte foreldre */
+    top: 0; /* Starter fra toppen */
+    left: 0; /* Starter fra venstre */
+    width: 100%; /* Fyller hele bredden */
+    height: 100%; /* Fyller hele høyden */
+    background-image: url('../Design\ uten\ navn.png'); /* Sett stien til bildet ditt */
+    background-size: cover; /* Dekker hele området */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* White Box for Landing Page */
+#white-box {
+    position: absolute;
+    width: 50%; /* Juster bredden for responsivitet */
+    height: 50%; /* Sett høyden til auto for tilpasning */
+    padding: 20px;
+    background-color: white;
+    opacity: 0.8; /* Gjør boksen litt gjennomsiktig for å vise bakgrunnen litt */
+    top: 50%; /* Juster plasseringen for å sentrere */
+    left: 50%; /* Sentrerer boksen i forhold til bredden */
+    transform: translate(-50%, -50%); /* Sentraliserer boksen */
+    border-radius: 40px; /* Runde hjørner */
+    border: 4px solid black; /* Svart, tynn ramme */
+    z-index: 1; /* Legger boksen over bakgrunnen */
+}
+
+/* Content Wrapper for landing-page */
+#content-wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Overskrifter */
+#first-overskrift {
+    font-size: 4vw; /* Fontstørrelsen tilpasser seg skjermbredden */
+    margin: 10px;
+}
+
+/* Start-knapp */
+#start-button {
+    font-family: Arial, sans-serif;
+    margin-top: 70px;
+    padding: 20px 60px; /* Øker størrelsen */
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 30px; /* Gjør hjørnene runde */
+    border: none; /* Fjerner standard kantlinje */
+    background-color: #d4c2f0; /* Lilla bakgrunnsfarge */
+    color: black; /* Svart tekstfarge */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s; /* Legger til en overgangseffekt */
+}
+
+#start-button:hover {
+    background-color: #b28ded; /* Mørkere lilla ved hover */
+}
+
+/* Rules Page */
+#rules-page {
+    position: absolute; /* Plasserer elementet absolutt i forhold til dets nærmeste posisjonerte foreldre */
+    top: 0; /* Starter fra toppen */
+    left: 0; /* Starter fra venstre */
+    width: 100%; /* Fyller hele bredden */
+    height: 100%; /* Fyller hele høyden */
+    background-image: url('../Design\ uten\ navn.png'); /* Sett stien til bildet ditt */
+    background-size: cover; /* Dekker hele området */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* White Box for Rules Page */
+#white-box-rules {
+    position: absolute;
+    width: 50%; /* Juster bredden for responsivitet */
+    height: 50%; /* Sett høyden til auto for tilpasning */
+    padding: 20px;
+    background-color: white;
+    opacity: 0.8; /* Gjør boksen litt gjennomsiktig for å vise bakgrunnen litt */
+    top: 50%; /* Juster plasseringen for å sentrere */
+    left: 50%; /* Sentrerer boksen i forhold til bredden */
+    transform: translate(-50%, -50%); /* Sentraliserer boksen */
+    border-radius: 40px; /* Runde hjørner */
+    border: 4px solid black; /* Svart, tynn ramme */
+    z-index: 1; /* Legger boksen over bakgrunnen */
+}
+
+/* Content Wrapper for Rules page */
+#content-wrapper-rules {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Regler-overskrift */
+#rules-header {
+    font-size: 4vw;
+    margin-bottom: 5px; /* Redusert for å bringe listen nærmere */
+}
+
+/* Regler-listen */
+#rules-list {
+    font-size: 2vw; /* Større skriftstørrelse */
+    list-style-type: disc; /* Bulletpoints */
+    padding: 5px;
+    padding-left: 20px; /* Liten innrykning for punktene */
+    text-align: left; /* Venstrejustering av teksten */
+    margin-bottom: 20px; /* Økt for å lage mer avstand til "FORTSETT"-knappen */
+}
+
+/* Fortsett-knapp */
+#continue-button {
+    font-family: Arial, sans-serif;
+    padding: 20px 60px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    background-color: #d4c2f0;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+    margin-top: 20px; /* Redusert for å flytte knappen lenger opp */
+}
+
+#continue-button:hover {
+    background-color: #b28ded;
+}
+/* Amalies kode ligger over denne kommentaren */
+
+
+
+
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
