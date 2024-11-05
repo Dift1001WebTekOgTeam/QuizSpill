@@ -252,19 +252,3 @@ function resetGame() {
     winScreen.style.display = 'none';
     homeScreen.style.display = 'block';
 }
-
-//Thomas skrev det nedenfor
-
-<script>
-// JavaScript for å slå av og på musikken
-function toggleMusikk() {
-    var musikk = document.getElementById("bakgrunnsmusikk");
-    if (musikk.paused) {
-        musikk.play();
-    } else {
-        musikk.pause();
-    }
-}
-</script>
-
-//Thomas skrev det ovenvor
