@@ -19,6 +19,17 @@ continueButton.addEventListener('click', function() {
     rulesPage.style.display = 'none';
     document.getElementById('home-screen').style.display = 'block'; // Viser kategorisiden
 });
+
+// JavaScript: Funksjon for å få skjermen til å blinke rødt
+function feilSvarBlink() {
+    // Legg til blink-red klassen på <body> elementet
+    document.body.classList.add('blink-red');
+    
+    // Fjern klassen igjen etter 0,5 sekunder
+    setTimeout(() => {
+        document.body.classList.remove('blink-red');
+    }, 500);
+}
 // Amalies kode ligger ovenfor denne kommentaren
 
 
