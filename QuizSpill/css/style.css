@@ -146,7 +146,7 @@
 /* CSS: For blinkende rød bakgrunn */
 .blink-red {
     background-color: red;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.8s ease;
 }
 /* Amalies kode ligger over denne kommentaren */
 
