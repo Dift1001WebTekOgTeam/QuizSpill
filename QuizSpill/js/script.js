@@ -28,7 +28,7 @@ function feilSvarBlink() {
     // Fjern klassen igjen etter 0,5 sekunder
     setTimeout(() => {
         document.body.classList.remove('blink-red');
-    }, 500);
+    }, 800);
 }
 // Amalies kode ligger ovenfor denne kommentaren
 
