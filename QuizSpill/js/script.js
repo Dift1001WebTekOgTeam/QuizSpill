@@ -1,39 +1,31 @@
-// Amalies kode følger nedenfor
 // Skjuler hjemskjermen ved start
 document.getElementById('home-screen').style.display = 'none';
 
-// Hent elementene
+// Henter elementene
 const startButton = document.getElementById('start-button');
 const continueButton = document.getElementById('continue-button');
 const landingPage = document.getElementById('landing-page');
 const rulesPage = document.getElementById('rules-page');
 
-// Bytt fra landing-page til regler-siden når "START"-knappen trykkes
+// Bytter fra landing-page til regler-siden når "START"-knappen trykkes
 startButton.addEventListener('click', function() {
     landingPage.style.display = 'none';
-    rulesPage.style.display = 'flex'; // Viser regler-siden
+    rulesPage.style.display = 'flex';
 });
 
-// Bytt fra regler-siden til kategorisiden når "FORTSETT"-knappen trykkes
+// Bytter fra regler-siden til kategorisiden når "FORTSETT"-knappen trykkes
 continueButton.addEventListener('click', function() {
     rulesPage.style.display = 'none';
-    document.getElementById('home-screen').style.display = 'block'; // Viser kategorisiden
+    document.getElementById('home-screen').style.display = 'block';
 });
 
-// JavaScript: Funksjon for å få skjermen til å blinke rødt
+// Funksjon for å få skjermen til å blinke rødt
 function feilSvarBlink() {
-    // Legg til blink-red klassen på <body> elementet
     document.body.classList.add('blink-red');
-    
-    // Fjern klassen igjen etter 0,5 sekunder
     setTimeout(() => {
         document.body.classList.remove('blink-red');
     }, 500);
 }
-// Amalies kode ligger ovenfor denne kommentaren
-
-
-
 
 // Henter elementer fra DOM
 const lifeCountElement = document.getElementById('life-count');
@@ -202,7 +194,7 @@ function checkAnswer(selectedIndex) {
             return;
         }
     } else {
-        feilSvarBlink();  // Her kalles funksjonen for å blinke skjermen
+        feilSvarBlink();
         lives--;
         lifeCountElement.innerText = lives;
         updateQuizLivesDisplay();
