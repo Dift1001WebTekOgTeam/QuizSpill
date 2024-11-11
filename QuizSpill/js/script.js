@@ -202,6 +202,7 @@ function checkAnswer(selectedIndex) {
             return;
         }
     } else {
+        feilSvarBlink();  // Her kalles funksjonen for å blinke skjermen
         lives--;
         lifeCountElement.innerText = lives;
         updateQuizLivesDisplay();
