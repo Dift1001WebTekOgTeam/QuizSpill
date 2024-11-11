@@ -30,6 +30,8 @@ function feilSvarBlink() {
         document.body.classList.remove('blink-red');
     }, 500);
 }
+
+backgroundMusic.volume = 2.5;  // 250% volum
 // Amalies kode ligger ovenfor denne kommentaren
 
 
